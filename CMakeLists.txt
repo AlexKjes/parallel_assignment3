@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.6.1)
 project(oving3)
 
 set(CMAKE_C_STANDARD 99)
@@ -11,5 +11,5 @@ if (OPENMP_FOUND)
 endif()
 
 
-set(SOURCE_FILES rpcomp.c rpcomp.h)
+set(SOURCE_FILES rpcomp.c rpcomp.h util.h util.c rpcpthread.c rpcpthread.h)
 add_executable(oving3 ${SOURCE_FILES})
